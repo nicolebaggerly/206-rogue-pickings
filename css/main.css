@@ -14,6 +14,7 @@ body {
 
 .container{
 	max-width: 1200px;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -48,6 +49,7 @@ p {
 /*The widths are in a percentage!*/
 header {
 	margin: 0 auto;
+	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-content: space-around;
@@ -55,8 +57,9 @@ header {
 }
 
 header h1 {
+	width: 100%;
 	margin: 0;
-	padding: 38px;
+	padding: 38px 0 0 0;
 	border-bottom: 3px solid #77a466;
 }
 header h1 span {
@@ -77,7 +80,7 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
+	padding: 12px 0 12px 0;
 	display: inline;
 }
 header nav ul li a{
@@ -88,7 +91,6 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 5%;
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -183,4 +185,19 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+
+/*** MEDIA QUERIES HERE ***/
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+    .bottom-section {
+    	width: 30%;
+    }
+ 
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+ 
 }
