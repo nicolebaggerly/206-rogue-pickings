@@ -175,7 +175,7 @@ header nav ul li a{
 footer {
 	height: 100%;
 	width: 90%;
-	border-top: 3px solid #eee;
+	border-top: 1px solid #eee;
 	margin: 0 auto;
 	text-align: center;
 	display: flex;
@@ -193,7 +193,26 @@ footer span {
 @media all and (min-width:768px) {
     /* Tablet styles here */
     .bottom-section {
-    	width: 30%;
+    	width: 100%;
+    	justify-content: space-between;
+    	align-items: normal;
+    	flex-flow: row;
+    	align-content: space-between;
+    }
+
+    .section-one, 
+    .section-two,
+    .section-three {
+    	padding: 18px;
+    }
+
+    .section-two {
+    	border-left: 1px solid #eee;
+    	border-right: 1px solid #eee;
+    }
+
+    footer {
+    	width: 100%;	
     }
  
 }
